@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    tools:context="com.gohoc.xiupuling.ui.MainActivity">
+
+    <include
+        android:id="@+id/toolbar_tow"
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/pullLoadMoreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_tow"
+        android:visibility="visible"
+        android:descendantFocusability="blocksDescendants" />
+
+    <LinearLayout
+        android:id="@+id/no_data_lv"
+        android:layout_below="@id/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_no_order_bg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="4dp"
+            android:text="当前无历史订单" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

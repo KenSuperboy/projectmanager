@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bk"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/withe"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gruop_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="共享群组"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp" />
+
+                <com.gohoc.xiupuling.widget.roundimage.CircleImageView
+                    android:id="@+id/cover_pic_iv"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@mipmap/icon_port_home" />
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/df_font"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/gruop_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="201703656"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="群组标签: "
+                        android:textColor="@color/df_font"
+
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/group_flage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/tips_font"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="15dp"
+                android:background="@color/splite" />
+
+            <LinearLayout
+
+                android:id="@+id/add_termianl"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/withe"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp">
+
+
+                <ImageView
+                    android:id="@+id/termianl_og_iv"
+                    android:layout_width="18dp"
+                    android:layout_height="14.7dp"
+                    android:src="@mipmap/icon_group_add_port"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:text="添加终端"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    app:srcCompat="@mipmap/icon_arrow_right" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+
+                android:background="@color/splite" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/bgc"
+    tools:context="com.gohoc.xiupuling.ui.group.GroupDetailsActivity">
+
+    <include
+        layout="@layout/toolbar_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:text="可选择加入本群的终端"
+        android:textColor="#898988"
+        android:textSize="13.3sp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/content_line"
+        android:dividerHeight="1dp"
+        android:listSelector="#00000000">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:text="没有合适加入该群组的终端"
+        android:textColor="@color/tab_text_nor"/>
+
+
+
+</LinearLayout>
+
+
+

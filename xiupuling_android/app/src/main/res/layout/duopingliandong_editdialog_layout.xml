@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--增加作品到联动包-->
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加作品到联动包"
+        android:drawableLeft="@mipmap/icon_tianjia_lb"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/heng_gang_select"
+        android:textColor="@color/blue"/>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <!--选择领播作品-->
+    <TextView
+        android:id="@+id/tv_xuanze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择领播作品"
+        android:drawableLeft="@mipmap/icon_lingbo"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/heng_gang_select"
+        android:textColor="@color/blue"/>
+
+    <!--<include layout="@layout/line_content_layout"/>-->
+
+    <!--选择作品排序-->
+    <TextView
+        android:id="@+id/tv_paixun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择作品排序"
+        android:drawableLeft="@mipmap/icon_paixu"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/heng_gang_select"
+        android:textColor="@color/blue"/>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <!--清空作品列表-->
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空作品列表"
+        android:drawableLeft="@mipmap/icon_liebiaolajitong"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/heng_gang_select"
+        android:textColor="@color/blue"/>
+
+    <include layout="@layout/line_content_layout"/>
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bgc"
+    android:orientation="vertical"
+>
+
+    <include
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                app:image_scale_type="center_crop"
+                app:indicator_drawable_selected="@drawable/blue_point"
+                app:indicator_drawable_unselected="@drawable/gray_point" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/splite" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

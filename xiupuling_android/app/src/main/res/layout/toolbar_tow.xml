@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_tow_height"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    style="@style/ClubToolbar"
+    app:contentInsetStart="0dp">
+    <!--
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/toolbar_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_return_left"
+            android:drawablePadding="6.7dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/withe"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/withe"
+            android:textSize="16sp"  />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.gohoc.xiupuling.ui.account.MemberRoleActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginBottom="94dp">
+
+        <RelativeLayout
+            android:id="@+id/xiaofeidaren_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/identity_buyer_active"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginRight="2.5dp">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@mipmap/identity_buyer3_active" />
+
+            <TextView
+                android:id="@+id/tips1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv1"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="消费达人"
+                android:textColor="@color/withe" />
+
+            <ImageView
+                android:id="@+id/ivf1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:visibility="visible"
+                app:srcCompat="@mipmap/identity_buyer2_active" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jizhu_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/zhngzhu_rl"
+            android:background="@mipmap/identity_jizhu_active"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%"
+            android:layout_marginLeft="2.5dp">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@mipmap/identity_jizhu3_active" />
+
+            <TextView
+                android:id="@+id/tips2"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv2"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="申请成为机主"
+                android:textColor="@color/withe" />
+
+            <ImageView
+                android:id="@+id/ivf2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/identity_jizhu2_active" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zhngzhu_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xiaofeidaren_rv"
+            android:background="@mipmap/identity_zhanzhu_active"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginRight="2.5dp">
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@mipmap/identity_zhanzhu3_active" />
+
+            <TextView
+                android:id="@+id/tips3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="申请成为展主"
+                android:textColor="@color/withe" />
+
+            <ImageView
+                android:id="@+id/ivf3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/identity_zhanzhu2_active" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shejishi_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiaofeidaren_rv"
+            android:layout_toRightOf="@id/zhngzhu_rl"
+            android:background="@mipmap/identity_shejishi_active"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="2.5dp">
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@mipmap/identity_shejishi2_active" />
+
+            <TextView
+                android:id="@+id/tips4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="申请成为设计师"
+                android:textColor="@color/withe" />
+
+            <ImageView
+                android:id="@+id/ivf4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/identity_shejishi3_active" />
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+</RelativeLayout>

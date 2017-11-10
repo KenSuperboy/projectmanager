@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <TextView
+        android:id="@+id/tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="会员权限不足"
+        android:textColor="@color/withe"
+        android:textSize="13sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/img_bg"
+        android:layout_below="@+id/tips_tv"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/tips_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/df_font"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/shopLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tips_title_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/icon_hyqx_zuopin_limit" />
+
+            <TextView
+                android:id="@+id/shop_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="作品剩余数"
+                android:textColor="@color/df_font"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/check_auth_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopLL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/tips_icon" />
+
+            <TextView
+                android:id="@+id/check_auth_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/df_font"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/to_tv"
+        android:layout_width="180dp"
+        android:layout_height="39dp"
+        android:background="@drawable/blue_c_soile_sp"
+        android:gravity="center"
+        android:text="会员商城"
+        android:textColor="@color/withe"
+        android:textSize="13dp"
+        android:layout_alignBottom="@+id/bt_tv"
+        android:layout_alignLeft="@+id/content_rl"
+        />
+
+    <TextView
+        android:id="@+id/bt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignRight="@+id/content_rl"
+        android:layout_below="@+id/content_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/to_tv"
+        android:background="@drawable/white_c_sp"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="#333333"
+        android:textSize="13dp" />
+</RelativeLayout>

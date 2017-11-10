@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bg_dialog_normal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="温馨提示"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_phone_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="这是是一个动态设置的提示框，请输入你想提示的content"
+                android:textColor="#333333"
+                android:textIsSelectable="true"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/dialog_carout_divider"
+            style="@style/DividerLineHor" />
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            style="@style/CommentLinearLayoutDialogStyle"
+            android:layout_below="@id/dialog_carout_divider"
+            android:background="@color/transparent">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/dialog_btn"
+                android:text="取消"
+                android:textColor="@color/colorPrimary"
+                android:visibility="visible" />
+
+            <View
+                style="@style/DividerLineHor"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/dialog_btn"
+                android:text="上传"
+                android:textColor="@color/colorPrimary"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+                                            android:id="@+id/swipeMenuLayout"
+                                            android:descendantFocusability="blocksDescendants"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/line_content_layout"/>
+
+    <LinearLayout
+        android:id="@+id/linear_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_selector"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/icon_zuhebao"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textColor="@color/tv_3"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gallery_text_gray"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_pingbi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/icon_zdshu"/>
+
+    </LinearLayout>
+
+        <include layout="@layout/line_content_layout"/>
+
+    </LinearLayout>
+
+    <!-- 以下都是侧滑菜单的内容依序排列 -->
+    <LinearLayout
+        android:id="@+id/mBehindViews"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/withe" />
+
+    </LinearLayout>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

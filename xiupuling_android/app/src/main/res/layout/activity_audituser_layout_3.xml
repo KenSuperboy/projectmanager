@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:fitsSystemWindows="true"
+    tools:context="com.gohoc.xiupuling.ui.account.RegisterActivity">
+
+    <include
+        android:id="@+id/toolbar_tow_i"
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <LinearLayout
+        android:id="@+id/register_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_tow_i"
+        android:background="@mipmap/img_jianguanbd_bg_1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_head"
+        android:textSize="10sp"
+        android:textColor="@color/gallery_text_gray"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:text="已将账户添加进监管账户" />
+
+    <LinearLayout
+        android:id="@+id/register_phone_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tip"
+        android:layout_marginTop="5dp"
+        android:background="@color/withe"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_usercenter_morentouxiang"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text=""
+                android:textColor="@color/tv_3"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textColor="@color/gallery_text_gray"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_phone_ll"
+        android:textSize="10sp"
+        android:textColor="@color/gallery_text_gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="您可以在审播管理中对改账户的承播内容进行审核" />
+
+    <LinearLayout
+        android:id="@+id/getvf_button_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tip_btn"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_bt_selector"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="确认添加"
+            android:textColor="@color/withe" />
+    </LinearLayout>
+
+
+</RelativeLayout>

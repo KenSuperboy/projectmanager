@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:fitsSystemWindows="true"
+    tools:context="com.gohoc.xiupuling.ui.account.RegisterActivity">
+
+    <include
+        android:id="@+id/toolbar_tow_i"
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <LinearLayout
+        android:id="@+id/register_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_tow_i"
+        android:background="@mipmap/img_jianguanbd_bg_3"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_phone_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_head"
+        android:layout_marginTop="30dp"
+        android:background="@color/withe"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:textSize="12sp"
+            android:text="手机号码：" />
+
+        <EditText
+            android:id="@+id/register_phone_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:inputType="phone"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:hint="请输入被监管账号"
+            android:textSize="12sp"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/field_del_nor"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_phone_ll"
+        android:textSize="10sp"
+        android:textColor="@color/gallery_text_gray"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="该账号管理的所有终端在承接广告订单时，需经过你审核后才会播放。" />
+
+    <LinearLayout
+        android:id="@+id/getvf_button_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+
+        android:background="@drawable/login_bt_selector"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/withe" />
+    </LinearLayout>
+
+</RelativeLayout>

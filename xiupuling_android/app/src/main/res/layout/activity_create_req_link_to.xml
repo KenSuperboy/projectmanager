@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.gohoc.xiupuling.ui.account.AccountSettingActivity">
+
+    <include
+        layout="@layout/toolbar_tow_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="25.3dp"
+                android:background="@color/splite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="179dp"
+                    android:background="@color/withe"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="18dp">
+
+                    <com.gohoc.xiupuling.utils.ClearEditText
+                        android:id="@+id/url_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="161dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:ems="100"
+                        android:gravity="left|top"
+                        android:hint="@string/create_req_link_tips"
+                        android:inputType="textMultiLine"
+                        android:maxLength="100"
+                        android:minLines="6"
+                        android:paddingLeft="20dp"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:layout_weight="1"
+                    android:background="@color/splite" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/create_req_link_tips2"
+                    android:textColor="#8d8d8c"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/show_button_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_bt_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:gravity="center"
+                android:paddingRight="12dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="去浏览器查看该网址页面"
+                    android:textColor="@color/withe"
+                    android:textSize="19sp" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/btn_wangzhi" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

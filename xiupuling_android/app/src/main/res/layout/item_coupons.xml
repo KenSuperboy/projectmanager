@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@mipmap/coupons_bg"
+        android:id="@+id/bg_rv"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/add_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            hedgehog:srcCompat="@mipmap/img_kaquanbao_tianjia" />
+
+        <TextView
+            android:id="@+id/coupons_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/add_iv"
+            android:layout_alignTop="@id/add_iv"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/add_iv"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/coupons_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_iv"
+            android:layout_marginTop="11dp"
+            android:text="有效期"
+            android:textColor="#929292"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/coupons_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coupons_time_tv"
+            android:text=""
+            android:maxEms="15"
+            android:textColor="#929292"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/coupons_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="+1"
+            android:textColor="@color/withe"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</LinearLayout>
+

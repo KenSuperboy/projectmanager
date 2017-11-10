@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true"
+    >
+
+    <include
+        android:id="@+id/toolbar_tow"
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+    <RelativeLayout
+        android:id="@+id/sort_rv"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/toolbar_tow"
+        android:layout_marginTop="@dimen/splite_height"
+        android:background="@color/withe"
+        >
+
+        <TextView
+            android:id="@+id/sort_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="13.5sp"
+            android:textColor="#3a3a3a"
+            android:text="默认排序"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/sort_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10.5dp"
+            android:layout_toRightOf="@id/sort_tv"
+            app:srcCompat="@mipmap/icon_sort_arrow_down" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sort_rv"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:layout_below="@id/list"
+        android:layout_marginTop="16dp"
+        android:background="@color/splite"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/no_data_lv"
+        android:layout_below="@id/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_no_flag_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/colorPrimary"
+            android:text="当前无留影/留言" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bk"
+    android:configChanges="keyboard"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    android:windowSoftInputMode="adjustPan"
+
+    tools:context="com.gohoc.xiupuling.ui.account.SecurityQsActivity">
+
+    <include
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- 避免获得焦点 -->
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <requestFocus />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:id="@+id/quetion1_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_selector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="题一："
+                        android:textColor="#949494" />
+
+                    <!--        <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spinner"
+                                android:textColor="#4D4D4D"
+                                android:textSize="12sp"
+                                android:layout_weight="1"
+                                android:popupBackground="#f0000000"
+                                android:gravity="left|center"
+                                />-->
+
+                    <TextView
+                        android:id="@+id/quetion1_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text=""
+                        android:textColor="#4D4D4D"
+                        android:textSize="12sp" />
+
+
+                    <ImageView
+                        android:id="@+id/quetion1_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:src="@mipmap/icon_arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/withe"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="回答："
+                        android:textColor="#949494"
+                        android:textSize="@dimen/menu_font_size" />
+
+                    <EditText
+                        android:id="@+id/answerq1_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:ems="11"
+                        android:gravity="left|center"
+                        android:hint="请输入该问题的答案"
+                        android:inputType="text"
+                        android:textSize="@dimen/menu_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:id="@+id/quetion2_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_selector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="题二："
+                        android:textColor="#949494" />
+
+                    <TextView
+
+                        android:id="@+id/quetion2_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text=""
+                        android:textColor="#4D4D4D"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/quetion2_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:src="@mipmap/icon_arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/withe"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="回答："
+                        android:textColor="#949494"
+                        android:textSize="@dimen/menu_font_size" />
+
+                    <EditText
+                        android:id="@+id/answerq2_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:ems="11"
+                        android:gravity="left|center"
+                        android:hint="请输入该问题的答案"
+                        android:inputType="text"
+                        android:textSize="@dimen/menu_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:id="@+id/quetion3_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_selector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="题三："
+                        android:textColor="#949494" />
+
+                    <TextView
+                        android:id="@+id/quetion3_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text=""
+                        android:textColor="#4D4D4D"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/quetion3_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:src="@mipmap/icon_arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/withe"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="回答："
+                        android:textColor="#949494"
+                        android:textSize="@dimen/menu_font_size" />
+
+                    <EditText
+                        android:id="@+id/answerq3_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:ems="11"
+                        android:gravity="left|center"
+                        android:hint="请输入该问题的答案"
+                        android:inputType="text"
+                        android:textSize="@dimen/menu_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sumbit_button_ll"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/remober_pssword_ll"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="52dp"
+                android:background="#CBCBCB"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="@color/withe" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+

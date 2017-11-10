@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    style="@style/ClubToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_tow_height"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+    <!--
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="6dp">
+
+        <TextView
+            android:id="@+id/toolbar_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:includeFontPadding="false"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/left_font_size" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="@color/withe"
+            android:textSize="@dimen/title_font_size" />
+
+        <TextView
+            android:id="@+id/toolbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="保存"
+            android:includeFontPadding="false"
+            android:textColor="@color/withe"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

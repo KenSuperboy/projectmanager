@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="03"
+        android:background="@drawable/item_gridview_white_round"
+        android:textColor="@color/tv_3"
+        />
+
+</RelativeLayout>

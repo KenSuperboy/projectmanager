@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.gohoc.xiupuling.ui.terminal.TerminalPlayerSettingActivity">
+
+    <include
+        layout="@layout/toolbar_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="30dp"
+                android:background="@color/splite" />
+
+            <!--放置方式-->
+            <LinearLayout
+                android:id="@+id/terminal_og_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="@dimen/menu_pading">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="放置方式"
+                    android:textColor="#414141" />
+
+                <TextView
+                    android:id="@+id/terminal_og_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="横屏"
+                    android:textColor="#848484" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:src="@mipmap/icon_arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="30dp"
+                android:background="@color/splite" />
+
+            <!--背景音乐-->
+            <LinearLayout
+                android:id="@+id/linear_yinyue_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="@dimen/menu_pading">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="背景音乐"
+                    android:textColor="#414141" />
+
+                <TextView
+                    android:id="@+id/tv_yinyue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="无"
+                    android:textColor="#848484" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:src="@mipmap/icon_arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="终端播放不带声音的内容时（如海报、图册），将启动设置的背景音乐"
+                android:textColor="#9e9e9e"
+                android:textSize="12dp" />
+
+
+            <!--滚动字幕-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="30dp"
+                android:background="@color/splite" />
+
+            <!--强制运行秀铺令-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/menu_pading"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="@dimen/menu_pading"
+                    android:text="滚动字幕"
+                    android:textColor="#414141" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_zimu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    app:sb_show_indicator="false"
+                    app:sb_checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <!--滚动字幕-->
+            <LinearLayout
+                android:id="@+id/linear_zimu_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:padding="@dimen/menu_pading">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="滚动字幕"
+                    android:textColor="#414141" />
+
+                <TextView
+                    android:id="@+id/tv_zimu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="无"
+                    android:textColor="#848484" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:src="@mipmap/icon_arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="30dp"
+                android:background="@color/splite" />
+
+            <!--强制运行秀铺令-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/menu_pading"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="@dimen/menu_pading"
+                    android:text="开机自启/定时返回"
+                    android:textColor="#414141" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/terinal_run_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    app:sb_show_indicator="false"
+                    app:sb_checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/terminal_setting_tips1"
+                android:textColor="#9e9e9e"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="10dp"
+                android:background="@color/splite" />
+
+            <!--定时关机-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/menu_pading"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="@dimen/menu_pading"
+                    android:text="定时开关机"
+                    android:textColor="#414141" />
+
+                <com.suke.widget.SwitchButton
+
+                    android:id="@+id/terinal_sutdown_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    app:sb_show_indicator="false"
+                    app:sb_checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <LinearLayout
+                android:id="@+id/sutdown_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:id="@+id/start_time_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/withe"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+         >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="开始"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/start_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="08:00"
+                        android:textColor="#EC5252"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/start_time_pl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <com.weigan.loopview.LoopView
+                        android:id="@+id/start_time_loop_h"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        app:awv_textsize="18"
+                        app:layout_widthPercent="50%"
+
+                        />
+
+                    <com.weigan.loopview.LoopView
+                        android:id="@+id/start_time_loop_m"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_toRightOf="@+id/start_time_loop_h"
+                        app:awv_textsize="18"
+                        app:layout_widthPercent="50%" />
+                </android.support.percent.PercentRelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+                <LinearLayout
+                    android:id="@+id/end_time_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/withe"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="结束"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/end_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="18:00"
+                        android:textColor="#EC5252"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/end_time_pl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <com.weigan.loopview.LoopView
+                        android:id="@+id/end_time_loop_h"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        app:awv_textsize="18"
+                        app:layout_widthPercent="50%"
+
+                        />
+
+                    <com.weigan.loopview.LoopView
+                        android:id="@+id/end_time_loop_m"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_toRightOf="@+id/end_time_loop_h"
+                        app:awv_textsize="18"
+                        app:layout_widthPercent="50%" />
+                </android.support.percent.PercentRelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rp_time_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/withe"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="重复"
+                        android:textColor="#414141"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/rp_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="#929292"
+                        android:layout_marginRight="5dp"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:src="@mipmap/icon_arrow_right" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/terminal_setting_tips2"
+                android:textColor="#9e9e9e"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="10dp"
+                android:background="@color/splite" />
+
+            <!--外接广告订单-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/menu_pading"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="@dimen/menu_pading"
+                    android:text="外接广告订单"
+                    android:textColor="#414141" />
+
+                <com.suke.widget.SwitchButton
+                    app:sb_show_indicator="false"
+                    android:id="@+id/terinal_ad_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    app:sb_checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/terminal_setting_tips3"
+                android:textColor="#9e9e9e"
+                android:textSize="12dp" />
+
+            <!--终端播放截图-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="30dp"
+                android:background="@color/splite" />
+
+            <LinearLayout
+                android:id="@+id/linear_bofangjietu_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/menu_pading">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="终端播放截图"
+                    android:textColor="#414141" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:src="@mipmap/icon_arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="部分硬件支持此功能"
+                android:textColor="#9e9e9e"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="30dp"
+                android:background="@color/splite" />
+
+            <!--右上角状态显示-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+
+                android:orientation="horizontal"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/menu_pading"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="@dimen/menu_pading"
+                    android:text="右上角状态显示(天气、时间...)"
+                    android:textColor="#414141" />
+
+                <com.suke.widget.SwitchButton
+
+                    android:id="@+id/sb_zhuangtai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    app:sb_show_indicator="false"
+                    app:sb_checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+
+            <!--右下角二维码显示-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+
+                android:orientation="horizontal"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/menu_pading"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="@dimen/menu_pading"
+                    android:text="右下角二维码显示"
+                    android:textColor="#414141" />
+
+                <com.suke.widget.SwitchButton
+
+                    android:id="@+id/sb_erweima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    app:sb_show_indicator="false"
+                    app:sb_checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginBottom="30dp"
+                android:background="@color/splite" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+

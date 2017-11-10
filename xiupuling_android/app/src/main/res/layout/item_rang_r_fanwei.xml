@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/withe"
+    android:baselineAligned="false"
+    android:layout_marginTop="14dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:background="@color/splite" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_show_info_zone" />
+
+        <TextView
+            android:id="@+id/push_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="范围悬赏￥10"
+            android:gravity="center|left"
+            android:textColor="@color/df_font"
+            android:textSize="13sp" />
+
+        <com.gohoc.xiupuling.widget.RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/title_tv"
+            android:layout_below="@+id/title_tv"
+            android:layout_centerInParent="true"
+            android:gravity="center|right"
+            android:layout_marginRight="15dp"
+            android:isIndicator="true"
+            hedgehog:halfstart="true"
+            hedgehog:starCount="10"
+            hedgehog:starEmpty="@mipmap/icon_star"
+            hedgehog:starFill="@mipmap/icon_star_gray"
+            hedgehog:starHalf="@mipmap/icon_star_gray"
+            hedgehog:starImageHeight="16dp"
+            hedgehog:starImageWidth="19dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:layout_marginLeft="48dp"
+        android:background="@color/splite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_zone_loc_gray" />
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingRight="15dp"
+            android:text="广东省真的凤凰寺发生FIFA是否士大夫大飒飒是范德萨发发生地方萨芬撒发发范德萨"
+            android:textColor="@color/tips_font"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_daxingshangchang_huise" />
+
+        <TextView
+            android:id="@+id/type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="超级商超"
+            android:textColor="@color/tips_font"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="23dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_show_time_gray" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="2017.1.1"
+            android:textColor="@color/tips_font"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/splite" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_jzjdd_zhongduan" />
+
+        <TextView
+            android:id="@+id/push_od_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="目前1个终端接单"
+            android:textColor="@color/tips_font"
+            android:textSize="11sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_show_rate" />
+
+        <TextView
+            android:id="@+id/push_od_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="15dp"
+            android:text="平均接单跨1周"
+            android:textColor="@color/tips_font"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="48dp"
+        android:background="@color/splite" />
+
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:ios="false"
+        app:leftSwipe="true"
+        app:swipeEnable="true"
+        android:id="@+id/swipeMenuLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:paddingRight="44dp"
+            android:gravity="center|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="剩余资金"
+                android:textColor="#333333"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/push_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥20"
+                android:textColor="#09a0fd"
+                android:textSize="11sp" />
+        </LinearLayout>
+        <!-- 以下都是侧滑菜单的内容依序排列 -->
+        <LinearLayout
+            android:id="@+id/closedViews"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="截止投放"
+                android:textColor="@color/withe" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/addViews"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="追加投放"
+                android:textColor="@color/withe" />
+
+        </LinearLayout>
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:background="@color/splite" />
+</LinearLayout>

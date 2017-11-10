@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/withe"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="44dp">
+
+                <TextView
+                    android:id="@+id/order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="订单名称:"
+                    android:textColor="#929292"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/order_name_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/order_name"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/order_name"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/order_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_name"
+                    android:layout_marginTop="15dp"
+                    android:text="订单金额"
+                    android:textColor="#929292"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/order_money_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/order_money"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/order_money"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="14dp"
+                android:background="@color/splite" />
+
+
+
+            <LinearLayout
+                android:id="@+id/coupons_lv"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/menu_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="优惠券"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="无可用优惠券" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:src="@mipmap/icon_arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="19dp"
+                android:background="@color/splite" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/withe"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="还需支付"
+
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/less_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="￥0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+
+                android:background="@color/splite" />
+            <LinearLayout
+                android:id="@+id/pay_crad_ll"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/menu_selector"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp">
+
+                <com.gohoc.xiupuling.widget.roundimage.CircleImageView
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@mipmap/icon_pay_union" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="银行卡支付"
+                        android:textColor="#505050"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/pay_crad_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/icon_zhuce_butongyi" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <LinearLayout
+                android:id="@+id/pay_wechat_ll"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/menu_selector"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp">
+
+                <com.gohoc.xiupuling.widget.roundimage.CircleImageView
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@mipmap/icon_pay_weixin" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="微信支付"
+                        android:textColor="#505050"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/pay_wechat_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/icon_zhuce_butongyi" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <LinearLayout
+                android:id="@+id/pay_aliy_ll"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/menu_selector"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp">
+
+                <com.gohoc.xiupuling.widget.roundimage.CircleImageView
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@mipmap/icon_pay_ali" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝支付"
+                        android:textColor="#505050"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/pay_aliy_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/icon__zhuce_tongyi" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <LinearLayout
+                android:id="@+id/button_ll"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/remober_pssword_ll"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/login_bt_selector"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="确认支付"
+                    android:textColor="@color/withe"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
+
+

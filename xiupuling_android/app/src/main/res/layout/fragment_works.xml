@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/img_zuoping_bg" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="2种作品获得方式"
+                android:textColor="#8B8B8B"
+                android:layout_marginBottom="5dp"
+                android:textSize="13sp" />
+
+            <include layout="@layout/line_content_new_layout"/>
+
+
+            <!--自己制作-->
+            <LinearLayout
+                android:id="@+id/rq_ct_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/title_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_design_auto"
+                    android:layout_weight="1"
+                    android:text="自己制作"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <include layout="@layout/line_10_white_layout"/>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--找人设计-->
+            <LinearLayout
+                android:id="@+id/rq_ot_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/title_item">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_design_other"
+                    android:layout_weight="1"
+                    android:text="找人设计"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+
+
+            <!--作品征集情况一览-->
+            <LinearLayout
+                android:id="@+id/rq_ot_list_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/title_item">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_zuopingqingkuang"
+                    android:layout_weight="1"
+                    android:text="作品征集情况一览"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+
+            </LinearLayout>
+
+
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <include layout="@layout/line_10_white_layout"/>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--我的作品库-->
+            <LinearLayout
+                android:id="@+id/rq_ct_list_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/title_item">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_wode_zuoping"
+                    android:layout_weight="1"
+                    android:text="我的作品库"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--作品组合包-->
+            <LinearLayout
+                android:id="@+id/linear_zuopingzuhe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/title_item">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_zuopinzuhebao"
+                    android:layout_weight="1"
+                    android:text="作品组合包"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--多屏联动包-->
+            <LinearLayout
+                android:id="@+id/linear_liandong_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/title_item">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_duojiliandongbao"
+                    android:layout_weight="1"
+                    android:text="多屏联动包"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <include layout="@layout/line_10_white_layout"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+
+

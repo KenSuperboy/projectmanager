@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="86sp"
+    android:layout_marginTop="1dp"
+    android:background="@color/withe"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.gohoc.xiupuling.widget.roundimage.CircleImageView
+        android:id="@+id/pic_iv"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:background="@mipmap/icon_port_home" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/pic_iv"
+        android:textColor="@color/df_font"
+        android:textSize="13sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/title_tv"
+        android:gravity="right"
+        android:textColor="@color/tips_font"
+        android:textSize="12sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:textSize="13sp"
+        android:textColor="@color/tips_font"
+        android:layout_toRightOf="@+id/pic_iv"
+        android:text="" />
+
+
+</RelativeLayout>

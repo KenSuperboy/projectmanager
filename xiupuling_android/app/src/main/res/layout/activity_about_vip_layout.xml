@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.gohoc.xiupuling.ui.terminal.TerminalPlayerSettingActivity">
+
+    <include
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_video_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="拥有"
+                android:textColor="@color/tv_3"/>
+
+            <TextView
+                android:id="@+id/tv_video_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/tv_3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="个"
+                android:textColor="@color/tv_3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/tv_3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_3"
+            android:text="权限介绍"
+            android:layout_margin="10dp"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gallery_text_gray"/>
+
+    </LinearLayout>
+
+    <!--视频相关解释-->
+    <TextView
+        android:id="@+id/tv_video_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:lineSpacingExtra="3dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="私人视频库主要用于多个视频的播放，你可以将多个视频统一放到某一个私人视频库，然后在终端的的循环播放模块里面，打开这个私人视频库，终端就会下载所有的视频并进行顺序播放。\n\n● 私人视频库可以和广告作品相结合，两个模块不断交替播放。\n● 人视频库没有投放时间段的概念，打开则会下载播放。\n● 私人视频库只支持从网站端上传内容。"
+        android:textColor="@color/tv_3"/>
+
+    <!--vip码相关解释-->
+    <TextView
+        android:id="@+id/tv_vip_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:visibility="gone"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center_horizontal"
+        android:lineSpacingExtra="3dp"
+        android:text="绑定了VIP码的终端在投放作品的时候，不需要消耗令牌。\n\n● 每个终端VIP码最多可以播放3次。\n● 每个VIP码只能绑定一台终端，不能同时绑定多台终端。"
+        android:textColor="@color/tv_3"/>
+
+    <LinearLayout
+        android:id="@+id/linear_vip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_add_vip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="手动输入添加"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_bt_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/tv_3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="空闲状态的vip码"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gallery_text_gray"/>
+
+        <com.gohoc.xiupuling.view.MyListView
+            android:id="@+id/listView_unbind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            >
+
+        </com.gohoc.xiupuling.view.MyListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/tv_3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="已经绑定终端的vip码"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gallery_text_gray"/>
+
+    <com.gohoc.xiupuling.view.MyListView
+        android:id="@+id/listView_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        >
+
+    </com.gohoc.xiupuling.view.MyListView>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+

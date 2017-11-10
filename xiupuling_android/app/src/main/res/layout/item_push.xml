@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/withe"
+        android:descendantFocusability="blocksDescendants"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/works_iv"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/df_logo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/v_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingRight="15sp"
+                android:text=""
+                android:textColor="#353535"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/termianl_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_title_tv"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="23dp"
+                hedgehog:srcCompat="@mipmap/icon_group_add_port" />
+
+            <TextView
+                android:id="@+id/termianl_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/termianl_iv"
+                android:layout_alignTop="@+id/termianl_iv"
+                android:layout_below="@id/v_title_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/termianl_iv"
+                android:text="0"
+                android:textColor="#353535"
+                android:textSize="11sp" />
+
+
+            <ImageView
+                android:id="@+id/rp_count_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_title_tv"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@id/termianl_count_tv"
+                hedgehog:srcCompat="@mipmap/icon_show_loop_gold" />
+
+            <TextView
+                android:id="@+id/rp_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rp_count_iv"
+                android:layout_alignTop="@+id/rp_count_iv"
+                android:layout_below="@id/v_title_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/rp_count_iv"
+                android:text="0"
+                android:textColor="#353535"
+                android:textSize="11sp" />
+
+
+            <ImageView
+                android:id="@+id/arr_right_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rp_count_iv"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/rp_count_iv"
+                android:layout_marginRight="10dp"
+                hedgehog:srcCompat="@mipmap/icon_arrow_right" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 以下都是侧滑菜单的内容依序排列 -->
+    <LinearLayout
+        android:id="@+id/mBehindViews"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=" 投放 "
+            android:textColor="@color/withe"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+
+

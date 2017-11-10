@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bk"
+    android:gravity="center"
+    tools:context="com.gohoc.xiupuling.ui.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:background="@color/splite" />
+
+    <RelativeLayout
+        android:id="@+id/sort_rv"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/splite_height"
+        android:background="@color/withe">
+
+        <TextView
+            android:id="@+id/sort_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="按星级排序"
+            android:textColor="#3a3a3a"
+            android:textSize="13.5sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/sort_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10.5dp"
+            android:layout_toRightOf="@id/sort_tv"
+            app:srcCompat="@mipmap/icon_sort_arrow_down" />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sort_rv">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/terminal_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/splite_height" />
+        <!--        <ExpandableListView
+                    android:id="@+id/expandedlist_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:childDivider="@color/withe"
+
+                    android:background="@color/withe"
+                     />-->
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:layout_below="@id/sort_rv"
+        android:background="@color/splite" />
+
+
+    <LinearLayout
+        android:id="@+id/no_data_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@mipmap/port_nodata_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="@string/no_terminal_tips"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/no_terminal_tips2_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <!--    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:id="@+id/sort_lv_menu"
+        android:background="@color/withe"
+        android:layout_below="@id/sort_rv"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+
+        <TextView
+            android:text="店名"
+            android:id="@+id/sort_tv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_mask" />
+
+    </LinearLayout>-->
+
+</RelativeLayout>

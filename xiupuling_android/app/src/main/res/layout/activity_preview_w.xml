@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:image_scale_type="fit_center"
+        app:indicator_drawable_selected="@drawable/blue_point"
+        app:indicator_drawable_unselected="@drawable/gray_point" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/crv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/banner_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/white_line_sp"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/content_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:image_scale_type="fit_center"
+                        app:indicator_drawable_selected="@drawable/blue_point"
+                        app:indicator_drawable_unselected="@drawable/gray_point" />
+
+                    <RelativeLayout
+                        android:id="@+id/videoRl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:id="@+id/view_frame"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="visible">
+
+                            <com.gohoc.xiupuling.widget.MVidioView
+                                android:id="@+id/m_video_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+
+
+                        <ImageView
+                            android:id="@+id/iv_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_shuiying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tipsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/banner_ll"
+            android:layout_alignLeft="@+id/banner_ll"
+            android:layout_marginBottom="10dp"
+            android:text="竖屏预览区域"
+            android:textColor="@color/withe"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tipsBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/banner_ll"
+            android:layout_below="@+id/banner_ll"
+            android:paddingBottom="20dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:text="点击进入全屏页面"
+            android:textColor="@color/withe"
+            android:textSize="13sp" />
+
+
+        <include
+            layout="@layout/toolbar_tow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_tow_height" />
+    </RelativeLayout>
+
+
+</FrameLayout>

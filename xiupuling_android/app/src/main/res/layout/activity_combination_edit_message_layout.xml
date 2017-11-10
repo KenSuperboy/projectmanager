@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+              android:fitsSystemWindows="true"
+    android:background="@color/bgc">
+
+    <!--编辑作品组合包信息-->
+    <include layout="@layout/toolbar_tow_save"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/splite">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@color/withe">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="更换封面"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/black_text"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_zuhebao"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_arrow_right"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/bgc">
+    </LinearLayout>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <!--早餐展示结合-->
+    <LinearLayout
+        android:id="@+id/linear_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="名称"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/black_text"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="早餐展示集合"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_arrow_right"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gallery_text_gray"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/bgc">
+    </LinearLayout>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <!--作品包封面-->
+    <LinearLayout
+        android:id="@+id/linear_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/withe"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/icon_fm_size"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="作品包封面"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black_text"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="横(1920*1080)"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_arrow_right"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gallery_text_gray"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <!--限定时段播放-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/withe"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/icon_xiandingshiduan"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="限定时段播放"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black_text"/>
+
+        </LinearLayout>
+
+
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sb_shiduan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            app:sb_show_indicator="false"
+            app:sb_checked="false" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <!--时间转盘-->
+    <LinearLayout
+        android:id="@+id/sutdown_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+
+        <LinearLayout
+            android:id="@+id/start_time_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/withe"
+            android:orientation="horizontal"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开始"
+                android:layout_gravity="center_vertical"
+                android:textColor="#414141"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/start_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_gravity="center_vertical"
+                android:text="08:00"
+                android:textColor="#EC5252"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/start_time_pl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.weigan.loopview.LoopView
+                android:id="@+id/start_time_loop_h"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:awv_textsize="18"
+                app:layout_widthPercent="50%"
+
+                />
+
+            <com.weigan.loopview.LoopView
+                android:id="@+id/start_time_loop_m"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@+id/start_time_loop_h"
+                app:awv_textsize="18"
+                app:layout_widthPercent="50%" />
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+
+        <LinearLayout
+            android:id="@+id/end_time_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/withe"
+            android:orientation="horizontal"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="结束"
+                android:textColor="#414141"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/end_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="18:00"
+                android:textColor="#EC5252"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/end_time_pl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.weigan.loopview.LoopView
+                android:id="@+id/end_time_loop_h"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:awv_textsize="18"
+                app:layout_widthPercent="50%"
+
+                />
+
+            <com.weigan.loopview.LoopView
+                android:id="@+id/end_time_loop_m"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@+id/end_time_loop_h"
+                app:awv_textsize="18"
+                app:layout_widthPercent="50%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rp_time_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/withe"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重复"
+                android:textColor="#414141"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="#929292"
+                android:layout_marginRight="5dp"
+                android:textSize="12sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_arrow_right" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+    </LinearLayout>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <!--独占时段播放-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/withe"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/icon_pingbi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:text="独占时段播放"
+                android:textColor="@color/black_text"/>
+
+        </LinearLayout>
+
+
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sb_pingbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            app:sb_show_indicator="false"
+            app:sb_checked="false" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line_content_layout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="时段设定关闭，表示将全天候参与轮播"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gallery_text_gray"/>
+
+
+</LinearLayout>

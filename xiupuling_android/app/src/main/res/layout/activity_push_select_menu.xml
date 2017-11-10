@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_delivery_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+
+    >
+
+    <include
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="33dp"
+                android:gravity="center"
+                android:id="@+id/p1_rv1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/p1_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/icon_delivery_zone_nor" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="范围悬赏"
+                    android:layout_alignLeft="@id/p1_iv"
+                    android:layout_alignRight="@id/p1_iv"
+                    android:layout_alignBaseline="@id/p1_iv"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/withe"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/p1_iv"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="在某个地域，行业范围内的终端"
+                    android:textColor="#7c7d7e"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:id="@+id/p1_rv2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/p2_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/icon_delivery_group_nor" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="群内定投"
+                    android:layout_alignLeft="@id/p2_iv"
+                    android:layout_alignRight="@id/p2_iv"
+                    android:layout_alignBaseline="@id/p2_iv"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/withe"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/p2_iv"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="指定某个群组的全部或部分终端"
+                    android:textColor="#7c7d7e"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:id="@+id/p3_rv1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/p3_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/icon_delivery_scan_nor" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="扫描投放"
+                    android:layout_alignLeft="@id/p3_iv"
+                    android:layout_alignRight="@id/p3_iv"
+                    android:layout_alignBaseline="@id/p3_iv"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/withe"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/p3_iv"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="被扫描的这台终端"
+                    android:textColor="#7c7d7e"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ios="false"
+        app:leftSwipe="true"
+        app:swipeEnable="true"
+        android:id="@+id/swipeMenuLayout">
+
+        <LinearLayout
+            android:id="@+id/content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_selector"
+            android:baselineAligned="false"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="9.3dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/terminal_number_id_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/soile_line_sp"
+                        android:gravity="center"
+                        android:text="01"
+                        android:textColor="#505050"
+                        android:textSize="10.5sp" />
+
+                    <ImageView
+                        android:id="@+id/terminal_battery_iv"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/port_order_off" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/terminal_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="15dp"
+                        android:text="¥0"
+                        android:textColor="#049dfd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/terminal_loop_count_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/terminal_price_tv"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="15dp"
+                        android:text="本周循环次数:"
+                        android:textColor="#939393"
+                        android:textSize="10.5sp" />
+
+                    <com.tikou.mylibrary.UiSeeKBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginLeft="11.5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/terminal_loop_count_tv"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:maxHeight="4dp"
+                        android:progress="30"
+                        android:progressDrawable="@drawable/seek_bar_bk_sp"
+                        android:splitTrack="false"
+                        android:thumb="@color/withe"
+                        custom:numScale="0.5"
+                        custom:numTextFormat=""
+                        custom:numTextSize="0sp"
+                        custom:numType="top"
+
+                        custom:numbackground="@mipmap/icon_biaoji_shoouye" />
+
+                    <ImageView
+                        android:id="@+id/terminal_arr_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="23dp"
+
+                        android:layout_toRightOf="@id/account_age_lv"
+                        android:layout_weight="1"
+                        android:src="@mipmap/icon_arrow_right" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/splite_height"
+                    android:background="@color/splite" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!-- 以下都是侧滑菜单的内容依序排列 -->
+        <LinearLayout
+            android:id="@+id/mBehindViews"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="删除终端"
+                android:textColor="@color/withe" />
+
+
+        </LinearLayout>
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+
+    <LinearLayout
+        android:id="@+id/terminal_sub_closed_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/withe"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:paddingBottom="18dp"
+            android:paddingRight="16dp"
+            android:paddingTop="18dp"
+            android:text="点击收起该门店终端"
+            android:textColor="#595959"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/terminal_sub_del_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/withe"
+        android:baselineAligned="false"
+        android:gravity="center|right"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:paddingBottom="18dp"
+            android:paddingRight="16dp"
+            android:paddingTop="18dp"
+            android:text="删除该门店"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/icon_jizhu_lajitong"
+            android:textColor="#595959"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+    </LinearLayout>
+
+</LinearLayout>

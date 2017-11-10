@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="xiupuling" ></dbname>
+
+    <version value="1" ></version>
+
+    <list>
+        <!--<mapping class="org.litepal.litepalsample.model.Album"></mapping>
+        <mapping class="org.litepal.litepalsample.model.Song"></mapping>-->
+   <!--     <mapping class="com.gohoc.xiupuling.bean.MyBaiduLocation"></mapping>-->
+    </list>
+</litepal>

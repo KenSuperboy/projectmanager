@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/menu_selector"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginTop="1dp"
+
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        hedgehog:srcCompat="@mipmap/icon_port_purpose"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/menu_pading"
+        android:paddingLeft="10dp"
+        android:paddingTop="@dimen/menu_pading"
+        android:textColor="#414141"
+        android:id="@+id/sub_name_tv" />
+
+    <TextView
+        android:text="100mb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub_size_tv"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center|right"/>
+
+
+
+<!--    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:sb_show_indicator="false"
+        android:layout_gravity="right|center" />-->
+
+
+    <ToggleButton
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff=""
+        android:textOn=""
+        android:gravity="right|center"
+        android:layout_marginRight="-20dp"
+        android:background="#00000000"
+        style="@style/MyToggleButton"
+        android:layout_gravity="right|center" />
+</LinearLayout>
+
+

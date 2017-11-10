@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_selector"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingBottom="11dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="11dp">
+
+        <com.gohoc.xiupuling.widget.roundimage.CircleImageView
+            android:id="@+id/group_pic_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/icon_port_home" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="@color/df_font"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/group_info_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:layout_marginTop="8dp"
+                android:textColor="#929292"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_arrow_right" />
+
+
+    </LinearLayout>
+    <!-- 以下都是侧滑菜单的内容依序排列 -->
+    <LinearLayout
+        android:id="@+id/mBehindViews"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="退出该群组"
+            android:textColor="@color/withe" />
+
+
+    </LinearLayout>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

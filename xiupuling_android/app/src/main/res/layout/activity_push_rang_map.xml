@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bgc"
+    tools:context="com.gohoc.xiupuling.ui.push.PushRangMapActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="25dp"
+        android:background="@drawable/white_solid_c_sp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:srcCompat="@mipmap/btn_sousuo" />
+
+        <TextView
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#DEDFE0" />
+
+        <EditText
+            android:id="@+id/key_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="搜索标注"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/location_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        app:srcCompat="@mipmap/icon_map_user_loc" />
+
+    <TextView
+        android:id="@+id/location_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/location_iv"
+        android:layout_marginLeft="5dp"
+        android:background="@mipmap/btn_dianji"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:text="点击可定位到当前位置"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_12" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/center_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:background="@mipmap/btn_changan"
+        android:gravity="center|right"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:text="长按可拖移位置"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/linearLayout2" />
+</RelativeLayout>

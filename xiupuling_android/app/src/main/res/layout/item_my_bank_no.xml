@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/no_date_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/add_card_ll"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/menu_selector"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <com.gohoc.xiupuling.widget.roundimage.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/icon_addcard" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="添加银行卡"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            app:srcCompat="@mipmap/icon_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bank_tips_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/bank_tips"
+        android:textColor="#929292"
+        android:textSize="11sp" />
+</LinearLayout>

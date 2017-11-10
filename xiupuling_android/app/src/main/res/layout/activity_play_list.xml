@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true"
+    >
+
+    <include
+        android:id="@+id/toolbar_tow"
+        layout="@layout/toolbar_tow_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+
+    <ExpandableListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@color/splite"
+        android:childDivider="@color/transparent"
+        android:dividerHeight="0dip"
+        android:layout_below="@+id/toolbar_tow"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:layout_below="@id/list"
+        android:layout_marginTop="16dp"
+        android:background="@color/splite" />
+    <LinearLayout
+        android:id="@+id/no_data_lv"
+        android:layout_below="@id/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/icon_kaquanbao_logo_nor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:text="" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

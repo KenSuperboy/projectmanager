@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bgc"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+            <!-- 避免获得焦点 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="25dp"
+                android:background="@color/splite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:background="@color/withe"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="18dp">
+
+                <com.gohoc.xiupuling.utils.ClearEditText
+                    android:id="@+id/req_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="204dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="100"
+                    android:maxLength="100"
+                    android:gravity="left|top"
+                    android:hint="@string/create_ot_tips"
+                    android:inputType="textMultiLine"
+                    android:minLines="6"
+                    android:paddingLeft="16dp"
+                    android:textSize="@dimen/menu_font_size" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

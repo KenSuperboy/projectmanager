@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FFF6F6F6</color><!-- 主题背景 -->
+    <color name="content_line_new">#E9E9E9</color><!-- 雇主要求的分割线颜色 -->
+    <color name="top_btn_line">#dddddd</color><!--顶部分割线颜色-->
+    <color name="content_line">#f0f0f0</color><!--内容分割线颜色-->
+    <color name="white">#ffffff</color>
+    <color name="gray_back">#eeeeee</color>
+    <color name="colorPrimary">#27ABFD</color>
+    <color name="yellow">#FFAF26</color>
+    <color name="colorPrimaryDark">#27ABFD</color>
+    <color name="colorAccent">#27ABFD</color>
+    <color name="withe">#FFFFFF</color>
+    <color name="tv_3">#505050</color>
+    <color name="gray_unselect">#c9c9c9</color>
+    <color name="withe_88">#88FFFFFF</color>
+    <color name="withe_gray">#EBEBEB</color>
+    <color name="bgc">#efeff4</color>
+    <array name="tab_colors">
+        <item name="tab_1">#455C65</item>
+        <item name="tab_2">#00886A</item>
+        <item name="tab_3">#8B6B62</item>
+        <item name="tab_4">#6C4A42</item>
+        <item name="tab_5">#F63D2B</item>
+    </array>
+    <color name="colorLoginbkDf">#CFCFCF</color>
+    <color name="source_dis">#5d5d5d</color>
+    <color name="colorLoginbkOn">#27ABFD</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_mask">#66000000</color>
+    <color name="gray_bk">#efeff4</color>
+    <color name="splite">#c1c1c1</color>
+    <color name="tab_text_nor">#515151</color>
+    <color name="tab_text_select">#62c1fe</color>
+    <color name="menu_on_c">#d2d6de</color>
+
+    <color name="base_title_color">#464a4d</color>
+    <color name="material_text_color_47">#333333</color>
+    <color name="divider_color_c7">#d3d3d3</color>
+
+    <color name="transparent_h">#55000000</color>
+
+    <color name="sms_c">#FACC04</color>
+    <color name="sms_ds">#CBCBCB</color>
+
+    <!--选图插件界面配色-->
+    <!--选中时的遮盖色-->
+    <color name="gallery_photo_mask">#88000000</color>
+    <!--拍摄按钮的背景色-->
+    <color name="gallery_dark_gray">#FF343535</color>
+
+    <!--背景-->
+    <color name="gallery_background">#f7eee3</color>
+    <!--分隔线-->
+    <color name="gallery_separation">#FFDCDCDC</color>
+    <!--灰色字体-->
+    <color name="gallery_text_gray">#FF999999</color>
+    <!--字体颜色-->
+    <color name="gallery_text_black">#FF333333</color>
+    <color name="gallery_folder_bg">#88FFFFFF</color>
+    <color name="gallery_blue">@color/colorPrimaryDark</color>
+
+    <!--终端编号-->
+    <color name="terminal_no_on">#27ABFD</color>
+    <color name="terminal_no_d">#B8B8B8</color>
+
+
+
+    <color name="black">#000</color>
+    <color name="black_text">#232323</color>
+
+    <color name="token_item_r">#540000</color>
+    <color name="token_item_g">#3d8739</color>
+
+    <color name="gray">#656565</color>
+    <color name="gray_radio">#eeeef3</color>
+
+    <color name="org">#F28A28</color>
+
+    <color name="df_font">#333333</color>
+    <color name="tips_font">#929292</color>
+
+    <color name="unable">#efefef</color>
+    <color name="gree">#277922</color>
+    <color name="touming">#00000000</color>
+
+</resources>

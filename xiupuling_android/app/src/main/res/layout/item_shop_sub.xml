@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@color/withe"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <ImageView
+        android:id="@+id/sp_cover_iv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/sp_nane_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:gravity="center|left"
+        android:text="门店加"
+        android:textColor="#545454"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/sp_money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="4dp"
+        android:text="￥98"
+        android:textColor="#d48b00"
+        android:textSize="11sp" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:fitsSystemWindows="true">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+
+    <LinearLayout
+        android:id="@+id/table_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="9dp">
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/tl_1"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal"
+            tl:tl_bar_color="@color/colorPrimaryDark"
+            tl:tl_indicator_color="@color/withe"
+            tl:tl_indicator_corner_radius="8dp"
+            tl:tl_textSelectColor="@color/colorPrimaryDark"
+            tl:tl_textUnselectColor="@color/withe"
+            tl:tl_textsize="13sp">
+
+        </com.flyco.tablayout.SegmentTabLayout>
+
+    </LinearLayout>
+
+    <com.gohoc.xiupuling.utils.CustomViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/table_ll" />
+
+</RelativeLayout>

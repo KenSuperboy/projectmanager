@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar_tow"
+    android:orientation="vertical"
+    android:paddingTop="13.3dp"
+    >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="设计需求"
+            android:textColor="#414141"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:layout_marginTop="5dp"
+            android:background="@color/splite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingTop="7.7dp">
+
+            <TextView
+                android:id="@+id/v_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/v_title_v_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_toRightOf="@id/v_title_tv"
+                android:text=""
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/v_favourable_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_title_tv"
+                android:paddingTop="17.7dp"
+                android:text="优惠活动"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/favourable_v_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/v_title_v_tv"
+                android:layout_below="@id/v_title_tv"
+                android:layout_toRightOf="@id/v_favourable_tv"
+                android:paddingTop="17.7dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text=""
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/v_qcode_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_favourable_tv"
+                android:paddingTop="17.7dp"
+                android:text="二维码"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/link_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_qcode_tv"
+                android:text="链接去向"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/adress_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/v_title_v_tv"
+                android:layout_below="@id/v_favourable_tv"
+                android:layout_toRightOf="@id/v_qcode_tv"
+                android:paddingTop="17.7dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text=""
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:layout_marginTop="20dp"
+        android:background="@color/splite" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splite_height"
+        android:layout_marginTop="32.7dp"
+        android:background="@color/splite" />
+    </LinearLayout>
+

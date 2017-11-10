@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bk"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    tools:context="com.gohoc.xiupuling.ui.MainActivity">
+
+    <include
+        android:id="@+id/toolbar_tow"
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+
+    <RelativeLayout
+        android:id="@+id/sort_rv"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/toolbar_tow"
+        android:layout_marginTop="@dimen/splite_height"
+        android:background="@color/withe"
+        >
+
+        <TextView
+            android:id="@+id/sort_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="按新增作品排序"
+            android:textColor="#3a3a3a"
+            android:textSize="13.5sp" />
+
+        <ImageView
+            android:id="@+id/sort_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10.5dp"
+            android:layout_toRightOf="@id/sort_tv"
+            app:srcCompat="@mipmap/icon_sort_arrow_down" />
+
+    </RelativeLayout>
+
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/pullLoadMoreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sort_rv"
+        android:descendantFocusability="blocksDescendants" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/no_data_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_tow"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/icon_design_nodata" />
+
+        <TextView
+            android:id="@+id/no_data_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="当前无历史订单"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

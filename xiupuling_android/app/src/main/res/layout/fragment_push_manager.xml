@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+            <include layout="@layout/line_content_new_layout"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/img_toubo" />
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--查询可外接广告订单-->
+            <LinearLayout
+                android:id="@+id/linear_chaxun_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/title_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_chaxun"
+                    android:layout_weight="1"
+                    android:text="查询可外接广告订单"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+
+            <include layout="@layout/line_10_white_layout"/>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--播放审核机制-->
+            <LinearLayout
+                android:id="@+id/linear_bofangshenhe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/title_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_jianguan"
+                    android:layout_weight="1"
+                    android:text="播放审核机制"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <include layout="@layout/line_10_white_layout"/>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--当前投放广告-->
+            <LinearLayout
+                android:id="@+id/linear_dangqiantoufang_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/title_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_dangqiantoufang"
+                    android:layout_weight="1"
+                    android:text="当前投放广告"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--历史投放广告-->
+            <LinearLayout
+                android:id="@+id/linear_lishitoufang_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/title_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_lishitoufang"
+                    android:layout_weight="1"
+                    android:text="历史投放广告"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <include layout="@layout/line_10_white_layout"/>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--当前承接广告-->
+            <LinearLayout
+                android:id="@+id/linear_dangqianchengjie_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/title_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_dangqianchengjie"
+                    android:layout_weight="1"
+                    android:text="当前承接广告"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <!--历史承接广告-->
+            <LinearLayout
+                android:id="@+id/linear_lishichengjie_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/title_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_item_txt"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/icon_lishichengjie"
+                    android:layout_weight="1"
+                    android:text="历史承接广告"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_content_new_layout"/>
+
+            <include layout="@layout/line_10_white_layout"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_fragment_content_id" type="id"/>
+    <item name="homeTabLayout_id" type="id"/>
+    <item name="homeViewpager_id" type="id"/>
+
+
+
+</resources>

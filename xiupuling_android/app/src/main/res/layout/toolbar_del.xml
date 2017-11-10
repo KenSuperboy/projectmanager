@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_tow_height"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+    <!--
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/toolbar_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_return_left"
+            android:drawablePadding="10dp"
+            android:text="返回"
+            android:gravity="center"
+            android:textColor="@color/withe"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/withe"
+            android:textSize="@dimen/title_font_size"  />
+
+        <ImageView
+            android:id="@+id/toolbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_jizhu_lajitong1"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

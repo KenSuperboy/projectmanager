@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_tow"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/content_line_new">
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="为联动关系输入一个名称"
+        android:textColor="@color/black_text"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:background="@color/withe"
+        android:textSize="13sp"
+        android:id="@+id/et_name" />
+
+    <include layout="@layout/line_content_new_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/content_line_new">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_guanxi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/withe"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="联动群组"
+            android:textColor="@color/blue"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_guanxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择联动的群组"
+            android:textColor="@color/gallery_text_gray"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@color/withe"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_arrow_right"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+
+
+    <include layout="@layout/line_content_new_layout"/>
+
+    <com.gohoc.xiupuling.view.MyListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:divider="@null">
+
+    </com.gohoc.xiupuling.view.MyListView>
+
+
+    <View
+        android:id="@+id/linear_btnline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@color/content_line_new">
+
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1、左滑设定领播终端，当领播终端播放此联动作品时，其它跟播终端将一起同步播放。\n2、联动包投放的终端需在同一局域网内。"
+        android:textColor="@color/gallery_text_gray"
+        android:gravity="center_vertical"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="保存投放关系"
+        android:background="@color/gray_unselect"
+        android:textColor="@color/withe"
+        android:textSize="15sp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

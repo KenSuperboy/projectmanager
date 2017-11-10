@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/withe"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+
+            android:paddingTop="17dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <com.gohoc.xiupuling.widget.roundimage.CircleImageView
+                    android:id="@+id/user_head_iv"
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    app:srcCompat="@mipmap/icon_usercenter_morentouxiang" />
+
+                <TextView
+                    android:id="@+id/user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/user_head_iv"
+                    android:layout_alignTop="@id/user_head_iv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/user_head_iv"
+                    android:gravity="center|left"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/add_count_bt_tv"
+                    android:layout_width="112dp"
+                    android:layout_height="52dp"
+                    android:layout_alignBottom="@id/user_head_iv"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/user_head_iv"
+                    android:background="@drawable/blue_c_sp"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="15dp"
+                    android:text="扩充拥有数" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="13sp"
+                android:text="我目前的权限如下:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:layout_marginTop="5dp"
+                android:background="@color/splite" />
+
+            <!--私人视频库-->
+            <LinearLayout
+                android:id="@+id/linear_video_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="终端VIP码"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/icon_sc_sirenpindao"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="私人视频库"
+                        android:drawablePadding="10dp"
+                        android:textSize="13sp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/tv_3"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_video_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/tv_3"
+                    android:drawableRight="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+
+            <!--终端vip码-->
+
+            <LinearLayout
+                android:id="@+id/linear_vip_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="终端VIP码"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/vipxx"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="终端VIP码"
+                        android:drawablePadding="10dp"
+                        android:textSize="13sp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/tv_3"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_vip_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/tv_3"
+                    android:drawableRight="@mipmap/icon_arrow_right"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/splite_height"
+                android:background="@color/splite" />
+        </LinearLayout>
+</LinearLayout>
+
+
+

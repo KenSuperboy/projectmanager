@@ -1,0 +1,8 @@
+主题颜色：<color name="colorPrimary">#27ABFD</color>
+灰色背景：<color name="bg">#FFF6F6F6</color>
+分割线的颜色：<color name="content_line_new">#E9E9E9</color>
+红色：<color name="red">#FF2600</color>
+设置状态栏：setStatusColor(R.color.colorPrimary);
+注意事项：
+    1、所有的布局都需要 android:fitsSystemWindows="true"
+    2、

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe"
+        android:descendantFocusability="blocksDescendants"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                hedgehog:srcCompat="@mipmap/icon_zuopingyilan_2" />
+
+            <TextView
+                android:id="@+id/req_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="2.3dp"
+                android:text=""
+                android:textColor="#484848"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/new_count_tv"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/blue_point"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0"
+                android:textColor="@color/withe"
+                android:textSize="11sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splite_height"
+            android:background="@color/splite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130.3dp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/no_data_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/no_date_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    hedgehog:srcCompat="@mipmap/img_zuopinsheji" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.7dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_toRightOf="@+id/no_date_img"
+                    android:gravity="center"
+                    android:text="作品设计中"
+                    android:textColor="#515151"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView13"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15.7dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/no_date_img"
+                    android:gravity="center"
+                    android:text="请耐心等候"
+                    android:textColor="#515151"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgRv">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:srcCompat="@mipmap/df_logo" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:srcCompat="@mipmap/df_logo" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:srcCompat="@mipmap/df_logo" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- 以下都是侧滑菜单的内容依序排列 -->
+
+
+    <LinearLayout
+        android:id="@+id/mBehindViews"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="更改需求"
+            android:textColor="@color/withe"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mBehindViews2"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#27ABFD"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="关闭需求"
+            android:textColor="@color/withe"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+

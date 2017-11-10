@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">秀铺令</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_message">暂无消息</string>
+    <string name="menu_1">主页</string>
+    <string name="menu_2">商城</string>
+    <string name="menu_3">圈子</string>
+    <string name="menu_4">我的</string>
+    <string name="agreement_title">我已阅读并同意</string>
+    <string name="register2_tips">短信验证码已经发送到手机，请查收！</string>
+    <string name="register3_tips">6～16位数字、大小写字母、标点符号</string>
+    <string name="register3_open_tips">建议打开此选项，否则无法看到终端可接的广告订单，也无法投放您的宣传海报到别人的终端。</string>
+    <string name="account_tips">身份实名认证后，即可成为机主或展主</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="change_mobile_tips">更换后个人信息不变，下次可以使用新手机号码登录</string>
+    <string name="title_activity_add_terminal">AddTerminalActivity</string>
+    <string name="add_shop_tips">（虚假或错误的地址信息将导致该门店被封杀）</string>
+    <string name="no_terminal_tips">亲，您还没有添加终端</string>
+    <string name="no_terminal_tips2">赶紧点击右上角<font color='#FF0000'>“+”</font>绑定一个</string>
+    <string name="scan_tips">ps:点击右上角 相册按钮即可进行图片二维码扫描</string>
+    <string name="terminal_scanl_tips">终端序列号二维码</string>
+    <string name="kefudianhua">客服电话：0755-26656887</string>
+    <string name="title_activity_change_mobile3">ChangeMobile3Activity</string>
+    <string name="title_activity_personl_certification">PersonlCertificationActivity</string>
+    <string name="certifi_tips">请提交真实的身份信息</string>
+    <string name="persopn_tips2">上传本人手持身份证的清晰照片，要求放大可看清身份证内容</string>
+    <string name="ent_certifi_tips">上传企业营业执照(副本),税务登记副本和组织结构代码证副本</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_personl_certification_info">PersonlCertificationInfoActivity
+    </string>
+    <string name="certifi_in_tips">信息审核中，结果将在7个工作日内通知您</string>
+    <string name="title_activity_security_qs">SecurityQsActivity</string>
+    <string name="add_pic_tips">最多提供5张图片作为终端安装场地(店铺)的环境照片</string>
+    <string name="terminal_details_tips">上述数据设置成功后，如无特殊情况，请不要更改。</string>
+    <string name="terminal_details_tips2">原有终端已损害，您可扫描新终端上的绑定二维码来进行更换，原有终端数据会拷贝至新终端上</string>
+    <string name="title_activity_location_dt_name">LocationDtNameActivity</string>
+    <string name="title_activity_setting_belong_shop">SettingBelongShopActivity</string>
+    <string name="title_activity_terminal_player_setting">TerminalPlayerSettingActivity</string>
+    <string name="terminal_setting_tips1">锁定终端后，将强制处于秀铺令播放状态，使用终端遥控器无法正常退出应用。（注：仅部分硬件设备支持此功能）</string>
+    <string name="terminal_setting_tips2">注：仅部分硬件设备支持此功能</string>
+    <string name="terminal_setting_tips3">通过外接广告订单赚取广告费（必须在个人账户设置中打开参与共享平台计划）</string>
+    <string name="group_dt_tips1">我的终端(%1$s),是否打开群内自动接单功能</string>
+    <string name="group_dt_tips1_1">我的终端(%1$s)</string>
+    <string name="group_dt_tips2">别人的终端(%1$s)</string>
+    <string name="terminal_player_tips">新增私人电台,请登录官网操作： \n  http://www.xiupuling.com</string>
+    <string name="group_inbite_tips">1.扫描二维码或搜索群组\n\n2.填写邀请码\n\n3.添加终端\n\n4.设置是否自动接单</string>
+    <string name="group_size_tips">群主对群内发布信息负有管理责任，需保证群内发布信息不存在违法违规。</string>
+    <string name="add_group_tips1">(你希望建立何种类型的终端群组)</string>
+    <string name="add_group_tips2">用小短语表示该群特性，如门口，面街，竖屏，深圳南山区，行业联盟（100汉字以内）</string>
+    <string name="title_activity_group_searc_bean">GroupSearcBean</string>
+    <string name="joing_group_tips1">1.投放广告到该群内别人的终端内，您为此支付费用且需要该终端的主人同意接单。</string>
+    <string name="joing_group_tips2">2.看到别人发到该群的广告订单，是否接单由您自主决定。</string>
+    <string name="joing_group_tips3">验证后加入该群。</string>
+    <string name="req_tips1">提供富有竞争力的优惠活动有利于增强信息的传播</string>
+    <string name="group_cession_tips1">确定选择<font color='#27ABFD'>0</font>为新群主，您将自动放弃群主身份。</string>
+    <string name="create_req_prootion">设计此作品是为了进行一项优惠活动的宣传推广，或者说在宣传商品或品牌的同时，您希望顾客能看到此优惠活动的信息，请打开并详细填写优惠活动方案。</string>
+    <string name="create_req_tips">顾客如何参与您举办的优惠活动？如时间、地点、参与条件、活动的特别说明</string>
+    <string name="create_req_link_tips">请输入要链接到的网站,如http://www.xiupuling.com</string>
+    <string name="create_req_link_tips2">客户扫描展示内容后，将自动转到以上链接地址</string>
+    <string name="create_req_link_tips3">选择一项可被用户扫描获得的地址</string>
+    <string name="create_req_link_tips4">顾客在终端上看到您展示的作品，用手机扫描后，即可链接到以上地址。</string>
+    <string name="create_req_pic_tips">请上传与您要求相似的例图或展示的商品、店面门头、品牌Logo等照片。并叙述上传照片的用途？</string>
+    <string name="group_size_tips2">仅提供群主修改群组信息的权限</string>
+    <string name="create_ot_tips">您对此作品有什么要求？如，我的客户主要是女性，希望画面效果艳丽、饱满、华丽，能勾起女性购买商品的欲望，对了别忘了突出我们的商品哦！</string>
+    <string name="push_req_tips">周一至周日算一周，按所跨周数进行收费</string>
+    <string name="req_show_tips">注：以上数据是根据系统经验预估得出，请以实际完成后得出的数据为准</string>
+    <string name="req_edit_tips">以上修改将针对该需求对应的所有投放：如果您选择多个作品进行投放，则所有投放对应的二维码链接及活动内容及活动将会全部更新。</string>
+    <string name="title_activity_push_by_scan">PushByScanActivity</string>
+    <string name="wk_tips">指您可以通过xiupuling.com上传到平台的作品数，购买别的设计师为您设计的作品将不会占用您的剩余作品数。</string>
+    <string name="pd_tips">指您可以通过xiupuling.com上传到平台的私人频道数,每个终端可选择打开其中的一个私人频道。</string>
+    <string name="sp_tips">您可通过一个手机同时管理的门店数。</string>
+    <string name="tl_tips">您可通过一个手机同时管理的电视终端。</string>
+    <string name="mspctips">注：永久权限，增加用户可同时管理的门店数量+1</string>
+    <string name="register4_open_tips">服务商跟您推荐了“秀铺令”产品，并悉心演示如何操作和使用，请填入该服务商推荐码，我们会对其进行奖励.</string>
+    <string name="bank_tips">目前支持:工商银行，建设银行，中国银行，
+                                农业银行,交通银行，招商银行，邮政储蓄银行，中信银行，光大银行，民生银行，兴业银行，华夏银行，上海浦东发展银行，深圳发展银行，广发银行，上海银行，平安银行，北京银行，渤海银行。
+                                </string>
+    <string name="add_bank_tips1">只支持绑定实名认证本人的银行账户</string>
+    <string name="flagstartips">星级标记会影响广告收益，广告收益按星级进行单价区分，星级越高，广告单价越高，门店终端只能收到比自己星级低的广告订单</string>
+    <string name="flageplaye">达标标记同播放次数有关，进度条走到达标位置，则点亮该标志</string>
+    <string name="flageplaye2">达标标记点亮后，本周广告订单即播放完成，订单收益到账。(我的钱包)</string>
+    <string name="flagupatetips">达标标记同播放次数有关，进度条走到达标位置，则点亮该标志</string>
+    <string name="flagupatetips2">累计升级旗帜标记，可以提升店铺星级</string>
+    <string name="pushordetips">以上为系统根据经验预估，请以实际为准</string>
+    <string name="order_rush_tips">《秀铺令》只提供需求发布平台，不提供设计服务，展主和设计师之间请自行沟通并达成服务协议。</string>
+    <string name="takecabacktips">退单后后您将不能再接此单</string>
+    <string name="takecabacktips2">系统将按照周来进行费用结算，您尚未完成播放任务的周将无法获得收益</string>
+    <string name="no_group_tips">亲,您还没有终端群组</string>
+    <string name="add_bank_tips2">为了你的资金安全，秀铺令仅支持身份认证通过的个人或企业银行账户进行提现</string>
+
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="joing_group_tips5">1.无条件播放群主投放到该群组内终端的广告且完全免费。</string>
+
+    <string name="joing_group_tips6">1.看到群主发到该群组的广告订单,是否接单由您自主决定。</string>
+    <string name="prder_rush_tips">您需要保证您的终端完成信息展示任务后，才能获得收益。</string>
+</resources>

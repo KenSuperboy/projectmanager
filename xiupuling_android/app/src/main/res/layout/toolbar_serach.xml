@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_tow_height"
+    android:background="@color/colorPrimary"
+    style="@style/ClubToolbar"
+    android:fitsSystemWindows="true">
+    <!--
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/toolbar_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_return_left"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="   "
+            android:textColor="@color/withe"
+            android:textSize="14sp" />
+
+        <com.gohoc.xiupuling.utils.ClearEditText
+            android:id="@+id/serach_ct"
+            android:layout_toRightOf="@id/toolbar_left_title"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableRight="@mipmap/icon_del_nor_40"
+            android:background="@drawable/serach_input_sp"
+            android:textSize="12sp"
+            android:inputType="textPersonName"
+            android:drawablePadding="15dp"
+            android:textColor="@color/withe"
+            android:drawableLeft="@mipmap/group_add_search_off"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/withe"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp">
+
+
+    <ImageView
+        android:id="@+id/termianl_og_iv"
+        android:layout_width="18dp"
+        android:layout_height="14.7dp"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/icon_group_add_port" />
+
+    <TextView
+        android:id="@+id/termianl_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=""
+        android:textColor="#3e3e3e"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/right_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:src="@mipmap/icon__zhuce_tongyi"
+        android:textColor="#414141"
+        android:visibility="invisible" />
+</LinearLayout>
+

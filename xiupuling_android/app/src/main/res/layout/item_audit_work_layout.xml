@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/withe"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9E9EC"/>
+
+    <!--第一行-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_jzjdd_zhongduan"/>
+
+        <TextView
+            android:id="@+id/termianl_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="太平洋咖啡馆"
+            android:lines="1"
+            android:textSize="11sp"
+            android:ellipsize="end"
+            android:textColor="@color/tips_font" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/works_iv"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/df_logo"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="标题"
+                android:textColor="#353535"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/arr_right_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="查看作品"
+                android:textSize="11sp"
+                android:drawablePadding="5dp"
+                android:gravity="end|center_vertical"
+                android:textColor="@color/gallery_text_gray"
+                android:drawableRight="@mipmap/icon_arrow_right"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9E9EC"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear_bohui_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_3"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@mipmap/bohuismall"
+                android:text="驳回"/>
+
+        </LinearLayout>
+        
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#E9E9EC"/>
+
+        <LinearLayout
+            android:id="@+id/linear_tongguo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_3"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@mipmap/tongguo_small"
+                android:text="通过"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9E9EC"/>
+
+</LinearLayout>

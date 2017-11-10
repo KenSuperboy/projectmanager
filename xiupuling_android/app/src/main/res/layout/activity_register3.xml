@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgc"
+    android:fitsSystemWindows="true"
+    tools:context="com.gohoc.xiupuling.ui.account.Register3Activity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_tow_i"
+        layout="@layout/toolbar_tow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_tow_height" />
+
+
+    <LinearLayout
+        android:id="@+id/register_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/img_zhuce_bg_1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/register3_tips_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register2_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#9e9e9e"
+            android:textSize="12sp"
+            android:text="@string/register3_tips" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_psd_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:textSize="13sp"
+            android:text="新密码：" />
+
+        <EditText
+            android:id="@+id/register3_password_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#9e9e9e"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingBottom="15dp"
+            android:textSize="12sp"
+            android:paddingTop="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_psd2_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:textSize="13sp"
+            android:text="验证密码：" />
+
+        <EditText
+            android:id="@+id/register3_password2_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:hint="确认密码"
+            android:textColorHint="#9e9e9e"
+            android:inputType="textPassword"
+            android:paddingBottom="15dp"
+            android:textSize="12sp"
+            android:paddingTop="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:text="参与共享平台计划"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            app:sb_show_indicator="false"
+            app:sb_checked="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tips_font"
+            android:textSize="11sp"
+            android:text="@string/register3_open_tips" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fuwushagnll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/withe"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textSize="13sp"
+            android:text="服务商:" />
+
+        <EditText
+            android:id="@+id/fw_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="11"
+            android:gravity="left|center"
+            android:hint="请输入服务商的推荐码(选填)"
+            android:inputType="text"
+            android:maxLength="10"
+            android:textColorHint="#9e9e9e"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fuwushagnll2"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tips_font"
+            android:textSize="11sp"
+            android:text="@string/register4_open_tips" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sumbit_button_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_bt_selector"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/withe" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
